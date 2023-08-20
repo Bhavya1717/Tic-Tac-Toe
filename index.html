@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1><br><br>
+    <div class="playground" id="playground">
+        <div class="get_data">
+            <div class="player1">
+                <label for="player1">Enter First Player's Name</label>
+                <input type="text" placeholder="Bhavya" id="player1">
+            </div>
+            <div class="player2">
+                <label for="player2">Enter Second Player's Name</label>
+                <input type="text" placeholder="Harshil" id="player2">
+            </div>
+            <button type="submit" onclick="redirectToPlayground(this.id)" id="sbmt">Submit</button>
+        </div>
+        <div class="board" id="board">
+            <div class="cell" id="a11" data-index="0" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a12" data-index="1" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a13" data-index="2" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a21" data-index="3" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a22" data-index="4" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a23" data-index="5" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a31" data-index="6" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a32" data-index="7" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+            <div class="cell" id="a33" data-index="8" onclick="PlaceOccupieOn(this.id)">&nbsp;</div>
+        </div>
+    </div>
+    <div class="winner" style="display: none;">
+        <h2>Winner:</h2>
+        <p id="winnerName"></p>
+    </div>
+</body>
+
+</html>
